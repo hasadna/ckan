@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-03-27 16:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Ori Hoch <ori@uumpa.com>, 2018\n"
+"Last-Translator: G Z <zomerg@gmail.com>, 2018\n"
 "Language-Team: Hebrew (https://www.transifex.com/the-public-knowledge-workshop/teams/89944/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -334,7 +334,7 @@ msgstr "הסתרה/הצגה של עמודות"
 
 #: ckanext/example_iconfigurer/templates/admin/config.html:11
 msgid "Datasets per page"
-msgstr ""
+msgstr "קבוצות מסמכים לעמוד"
 
 #: ckanext/example_iconfigurer/templates/admin/config.html:13
 msgid "Test conf"
@@ -383,11 +383,11 @@ msgstr "שונה לאחרונה"
 
 #: ckanext/example_idatasetform/templates/package/search.html:16
 msgid "Custom Field Ascending"
-msgstr ""
+msgstr "שדה מותאם אישית בסדר עולה"
 
 #: ckanext/example_idatasetform/templates/package/search.html:17
 msgid "Custom Field Descending"
-msgstr ""
+msgstr "שדה מותאם אישית בסדר יורד"
 
 #: ckan/templates/group/read.html:17 ckan/templates/organization/read.html:23
 #: ckan/templates/package/search.html:33
@@ -515,7 +515,7 @@ msgstr "לא ניתן לטעון את התצוגה"
 #: ckanext/reclineview/theme/public/recline_view.js:77
 #: ckanext/reclineview/theme/public/recline_view.min.js:5
 msgid "DataStore returned an error"
-msgstr ""
+msgstr "חנות הנתונים החזירה הודעת שגיאה"
 
 #: ckanext/reclineview/theme/public/recline_view.js:79
 #: ckanext/reclineview/theme/public/recline_view.min.js:5
@@ -525,7 +525,7 @@ msgstr ""
 #: ckanext/reclineview/theme/public/recline_view.js:193
 #: ckanext/reclineview/theme/public/recline_view.min.js:14
 msgid "Grid"
-msgstr ""
+msgstr "רשת"
 
 #: ckan/templates/package/snippets/view_form_filters.html:46
 #: ckanext/reclineview/theme/public/recline_view.js:215
@@ -536,7 +536,7 @@ msgstr "מסננים"
 #: ckanext/reclineview/theme/templates/recline_graph_form.html:3
 #: ckanext/reclineview/theme/templates/recline_map_form.html:3
 msgid "Row offset"
-msgstr ""
+msgstr "הסטת שורה"
 
 #: ckanext/reclineview/theme/templates/recline_graph_form.html:3
 #: ckanext/reclineview/theme/templates/recline_map_form.html:3
@@ -687,7 +687,7 @@ msgstr "מספר מסמכים"
 #: ckanext/stats/templates/ckanext/stats/index.html:152
 #: ckanext/stats/templates/ckanext/stats/index.html:184
 msgid "Users Creating Most Datasets"
-msgstr ""
+msgstr "משתמשים יוצרים את מרבית הפריטים"
 
 #: ckan/logic/converters.py:123 ckan/logic/validators.py:216
 #: ckan/logic/validators.py:233 ckan/logic/validators.py:714
@@ -1007,7 +1007,7 @@ msgstr "הרשות נמחקה"
 #: ckan/controllers/group.py:625
 #, python-format
 msgid "%s has been deleted."
-msgstr ""
+msgstr "%s נמחק"
 
 #: ckan/controllers/group.py:657
 #, python-format
@@ -1596,7 +1596,7 @@ msgstr[3] "לפני יותר מ-{years} שנים"
 
 #: ckan/lib/formatters.py:146
 msgid "{month} {day}, {year}, {hour:02}:{min:02} ({timezone})"
-msgstr ""
+msgstr "{חודש} {יום}, {שנה}, {שעה:02}:{דקה:02} ({אזור זמן)"
 
 #: ckan/lib/formatters.py:151
 msgid "{month} {day}, {year}"
@@ -1819,7 +1819,7 @@ msgstr "אין אפשרות להשתמש בשם זה"
 #: ckan/logic/validators.py:340
 #, python-format
 msgid "Must be at least %s characters long"
-msgstr ""
+msgstr "חייב להיות באורך מינימלי של %sתווים"
 
 #: ckan/logic/validators.py:342 ckan/logic/validators.py:631
 #, python-format
@@ -1890,7 +1890,7 @@ msgstr "שם המשתמש הזה אינו זמין"
 
 #: ckan/logic/validators.py:566
 msgid "That login name can not be modified."
-msgstr ""
+msgstr "שם משתמש זה לא ניתן לעריכה"
 
 #: ckan/logic/validators.py:577
 msgid "Please enter both passwords"
@@ -1902,7 +1902,7 @@ msgstr "הסיסמאות חייבות להיות מחרוזות"
 
 #: ckan/logic/validators.py:589
 msgid "Your password must be 8 characters or longer"
-msgstr ""
+msgstr "סיסמתך חייבת להיות 8 תווים או יותר"
 
 #: ckan/logic/validators.py:598
 msgid "The passwords you entered do not match"
@@ -2076,7 +2076,7 @@ msgstr "REST API: מחק חבר: %s"
 
 #: ckan/logic/action/delete.py:358
 msgid "Organization cannot be deleted while it still has datasets"
-msgstr ""
+msgstr "ארגון לא יכול להימחק בזמן שמכיל קבוצות מסמכים"
 
 #: ckan/logic/action/delete.py:560 ckan/logic/action/delete.py:586
 #: ckan/logic/action/get.py:2432 ckan/logic/action/update.py:906
@@ -2670,10 +2670,10 @@ msgstr ""
 #: ckan/public/base/test/spec/i18n.spec.js:54
 msgid "no translation"
 msgid_plural "no translations"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "אין תרגום"
+msgstr[1] "אין תרגומים"
+msgstr[2] "אין תרגומים"
+msgstr[3] "אין תרגומים"
 
 #: ckan/public-bs2/base/test/spec/i18n.spec.js:22
 #: ckan/public/base/test/spec/i18n.spec.js:22
@@ -2739,10 +2739,10 @@ msgstr[3] ""
 #, python-format
 msgid "%(num)d item"
 msgid_plural "%(num)d items"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%(num)dפריט"
+msgstr[1] "%(num)dפריטים"
+msgstr[2] "%(num)dפריטים"
+msgstr[3] "%(num)dפריטים"
 
 #: ckan/public-bs2/base/test/spec/i18n.spec.js:100
 #: ckan/public-bs2/base/test/spec/i18n.spec.js:105
@@ -2753,10 +2753,10 @@ msgstr[3] ""
 #, python-format
 msgid "%(num)d missing translation"
 msgid_plural "%(num)d missing translations"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%(num)dתרגום חסר"
+msgstr[1] "%(num)d תרגומים חסרים"
+msgstr[2] "%(num)d תרגומים חסרים"
+msgstr[3] "%(num)d תרגומים חסרים"
 
 #: ckan/templates/error_document_template.html:3
 #, python-format
@@ -3436,7 +3436,7 @@ msgstr "חיפוש"
 
 #: ckan/templates/home/snippets/search.html:8
 msgid "Search datasets"
-msgstr ""
+msgstr "חיפוש מסמכים"
 
 #: ckan/templates/home/snippets/search.html:16
 msgid "Popular tags"
@@ -3858,7 +3858,7 @@ msgstr "לא נוצרה תצוגה שמתאימה למשאב זה"
 
 #: ckan/templates/package/resource_read.html:139
 msgid "The site administrators may not have enabled the relevant view plugins"
-msgstr ""
+msgstr "ייתכן שמנהלי האתר לא הפעילו את התוספים הנדרשים"
 
 #: ckan/templates/package/resource_read.html:140
 msgid ""
@@ -3897,7 +3897,7 @@ msgstr "לא ידוע"
 
 #: ckan/templates/package/resource_read.html:176
 msgid "Metadata last updated"
-msgstr ""
+msgstr "עדכון אחרון של פריטים נוספים"
 
 #: ckan/templates/package/resource_read.html:180
 #: ckan/templates/package/snippets/additional_info.html:70
@@ -4208,7 +4208,7 @@ msgstr "מידע נוסף"
 
 #: ckan/templates/package/snippets/resource_view.html:10
 msgid "Fullscreen"
-msgstr ""
+msgstr "מסך מלא"
 
 #: ckan/templates/package/snippets/resource_view.html:18
 msgid "Embed"
@@ -4718,7 +4718,7 @@ msgstr "צרו מסמכים, רשויות ודברים מרגשים אחרים"
 
 #: ckan/templates/user/new_user_form.html:5
 msgid "username"
-msgstr ""
+msgstr "שם משתמש"
 
 #: ckan/templates/user/new_user_form.html:6
 msgid "Full Name"
@@ -4739,7 +4739,7 @@ msgstr "אתחול סיסמא"
 
 #: ckan/templates/user/perform_reset.html:21
 msgid "You can also change username. It can not be modified later."
-msgstr ""
+msgstr "ניתן לשנות את שם המשתמש. לא יהיה ניתן לשנות זאת מאוחר יותר. "
 
 #: ckan/templates/user/perform_reset.html:29
 msgid "Update Password"
@@ -4826,4 +4826,4 @@ msgstr "חיפוש משתמשים"
 
 #: ckan/views/user.py:588
 msgid "Your password must be 8 characters or longer."
-msgstr ""
+msgstr "סיסמתך חייבת להיות 8 תווים או יותר"
