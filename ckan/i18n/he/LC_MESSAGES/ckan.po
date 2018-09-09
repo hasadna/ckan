@@ -1596,7 +1596,7 @@ msgstr[3] "לפני יותר מ-{years} שנים"
 
 #: ckan/lib/formatters.py:146
 msgid "{month} {day}, {year}, {hour:02}:{min:02} ({timezone})"
-msgstr "{חודש} {יום}, {שנה}, {שעה:02}:{דקה:02} ({אזור זמן)"
+msgstr "{month} {day}, {year}, {hour:02}:{min:02} ({timezone})"
 
 #: ckan/lib/formatters.py:151
 msgid "{month} {day}, {year}"
