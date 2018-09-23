@@ -1,6 +1,6 @@
 # The Public Knowledge Workshop CKAN
 
-This is a fork of  [CKAN](http://ckan.org/) with updated translations (Hebrew / Arabic) and fixes for RTL languages.
+This is a fork of [CKAN](http://ckan.org/) with updated translations (Hebrew / Arabic), fixes for RTL languages and other improvements.
 
 See the [CKAN Documentation](http://docs.ckan.org) for installation and usage instructions.
 
