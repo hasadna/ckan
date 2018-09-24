@@ -1,6 +1,5 @@
 # See CKAN docs on installation from Docker Compose on usage
 FROM debian:jessie
-MAINTAINER Open Knowledge
 
 # Install required system packages
 RUN apt-get -q -y update \
@@ -47,11 +46,12 @@ RUN ckan-pip install -U pip && \
     ckan-pip install -e $CKAN_VENV/src/ckan/ && \
     ln -s $CKAN_VENV/src/ckan/ckan/config/who.ini $CKAN_CONFIG/who.ini && \
     cp -v $CKAN_VENV/src/ckan/contrib/docker/ckan-entrypoint.sh /ckan-entrypoint.sh && \
-    chmod +x /ckan-entrypoint.sh && \
-    chown -R ckan:ckan $CKAN_HOME $CKAN_VENV $CKAN_CONFIG $CKAN_STORAGE_PATH
+    chmod +x /ckan-entrypoint.sh
 
 COPY hasadna-requirements.txt /tmp/hasadna-requirements.txt
 RUN ckan-pip install -r /tmp/hasadna-requirements.txt
+
+RUN chown -R ckan:ckan $CKAN_HOME $CKAN_VENV $CKAN_CONFIG $CKAN_STORAGE_PATH
 
 COPY hasadna-ckan-entrypoint.sh /ckan-entrypoint.sh
 COPY hasadna-templater.sh /templater.sh

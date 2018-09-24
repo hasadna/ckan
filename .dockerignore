@@ -1,0 +1,8 @@
+.github
+.tx
+build/sphinx
+*.egg-info
+ckan/tests
+doc
+node_modules
+package-lock.json
