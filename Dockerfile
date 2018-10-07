@@ -39,26 +39,36 @@ RUN mkdir -p $CKAN_VENV $CKAN_CONFIG $CKAN_STORAGE_PATH && \
     ln -s $CKAN_VENV/bin/paster /usr/local/bin/ckan-paster
 
 # Setup CKAN
+RUN ckan-pip install -U pip &&\
+    chown -R ckan:ckan $CKAN_HOME $CKAN_VENV $CKAN_CONFIG $CKAN_STORAGE_PATH
+
+USER ckan
+
+COPY requirement-setuptools.txt $CKAN_VENV/src/ckan/
+RUN ckan-pip install --upgrade --no-cache-dir -r $CKAN_VENV/src/ckan/requirement-setuptools.txt
+
+COPY requirements.txt $CKAN_VENV/src/ckan/
+RUN ckan-pip install --upgrade --no-cache-dir -r $CKAN_VENV/src/ckan/requirements.txt
+
 ADD . $CKAN_VENV/src/ckan/
-RUN ckan-pip install -U pip && \
-    ckan-pip install --upgrade --no-cache-dir -r $CKAN_VENV/src/ckan/requirement-setuptools.txt && \
-    ckan-pip install --upgrade --no-cache-dir -r $CKAN_VENV/src/ckan/requirements.txt && \
-    ckan-pip install -e $CKAN_VENV/src/ckan/ && \
-    ln -s $CKAN_VENV/src/ckan/ckan/config/who.ini $CKAN_CONFIG/who.ini && \
-    cp -v $CKAN_VENV/src/ckan/contrib/docker/ckan-entrypoint.sh /ckan-entrypoint.sh && \
-    chmod +x /ckan-entrypoint.sh
+
+USER root
+
+RUN chown -R ckan:ckan $CKAN_VENV/src/ckan &&\
+    ln -s $CKAN_VENV/src/ckan/ckan/config/who.ini $CKAN_CONFIG/who.ini
+
+USER ckan
+
+RUN ckan-pip install -e $CKAN_VENV/src/ckan/
 
 COPY hasadna-requirements.txt /tmp/hasadna-requirements.txt
 RUN ckan-pip install -r /tmp/hasadna-requirements.txt
-
-RUN chown -R ckan:ckan $CKAN_HOME $CKAN_VENV $CKAN_CONFIG $CKAN_STORAGE_PATH
 
 COPY hasadna-ckan-entrypoint.sh /ckan-entrypoint.sh
 COPY hasadna-templater.sh /templater.sh
 
 ENTRYPOINT ["/ckan-entrypoint.sh"]
 
-USER ckan
 EXPOSE 5000
 
 ENV GUNICORN_WORKERS=4
