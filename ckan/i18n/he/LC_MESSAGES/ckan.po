@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-03-27 16:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: G Z <zomerg@gmail.com>, 2018\n"
+"Last-Translator: zomerg <zomerg@gmail.com>, 2018\n"
 "Language-Team: Hebrew (https://www.transifex.com/the-public-knowledge-workshop/teams/89944/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -131,6 +131,7 @@ msgid ""
 "Data Dictionary saved. Any type overrides will take effect when the resource"
 " is next uploaded to DataStore"
 msgstr ""
+"נתוני המילון נשמרו. כל עריכה מחודשת תעודכן בפעם הבאה שיבוצע סנכרון עם השרת"
 
 #: ckanext/datastore/backend/postgres.py:1032
 msgid ""
@@ -1968,19 +1969,19 @@ msgstr "לא מחרוזת"
 
 #: ckan/logic/validators.py:790
 msgid "This parent would create a loop in the hierarchy"
-msgstr "הורה זה יכול ליצור לולאה בהררכיה"
+msgstr "מקור זה יכול ליצור לולאה בהררכיה"
 
 #: ckan/logic/validators.py:800
 msgid "\"filter_fields\" and \"filter_values\" should have the same length"
-msgstr ""
+msgstr "\"שדות מסוננים\" ו\"ערכים מסוננים\" צריכים להיות באורך זהה"
 
 #: ckan/logic/validators.py:811
 msgid "\"filter_fields\" is required when \"filter_values\" is filled"
-msgstr ""
+msgstr "\"שדות מסוננים\" נדרשים כש\"ערכים מסוננים\" מולאו"
 
 #: ckan/logic/validators.py:814
 msgid "\"filter_values\" is required when \"filter_fields\" is filled"
-msgstr ""
+msgstr "\"ערכים מסוננים\" נדרשים כש\"שדות מסוננים\" מולאו"
 
 #: ckan/logic/validators.py:828
 msgid "There is a schema field with the same name"
@@ -2463,10 +2464,10 @@ msgstr "לא נמצאו התאמות"
 #, python-format
 msgid "Input is too short, must be at least one character"
 msgid_plural "Input is too short, must be at least %(num)d characters"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "קלט קצר מדי, חייב להיות באורך של תו אחד לפחות"
+msgstr[1] "קלט קצר מדי, חייב להיות לפחות %(num)d תווים"
+msgstr[2] "קלט קצר מדי, חייב להיות לפחות %(num)d תווים"
+msgstr[3] "קלט קצר מדי, חייב להיות לפחות %(num)d תווים"
 
 #: ckan/public-bs2/base/javascript/modules/basic-form.js:4
 #: ckan/public/base/javascript/modules/basic-form.js:4
@@ -2692,10 +2693,10 @@ msgstr ""
 #, python-format
 msgid "no %(attr)s translation"
 msgid_plural "no %(attr)s translations"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "אין תרגום %(attr)s"
+msgstr[1] "אין %(attr)s תרגומים"
+msgstr[2] "אין %(attr)s תרגומים"
+msgstr[3] "אין %(attr)s תרגומים"
 
 #: ckan/public-bs2/base/test/spec/i18n.spec.js:39
 #: ckan/public-bs2/base/test/spec/i18n.spec.js:40
