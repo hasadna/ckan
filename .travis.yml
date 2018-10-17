@@ -15,3 +15,4 @@ script:
 - docker build -t uumpa/hasadna-ckan:latest -t uumpa/hasadna-ckan:${TRAVIS_COMMIT} .
 - docker push uumpa/hasadna-ckan:latest
 - docker push uumpa/hasadna-ckan:${TRAVIS_COMMIT}
+- ./release.sh --travis
