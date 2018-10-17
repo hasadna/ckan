@@ -54,7 +54,7 @@ ADD . $CKAN_VENV/src/ckan/
 
 USER root
 
-RUN chown -R ckan:ckan $CKAN_VENV/src/ckan &&\
+RUN chown -R ckan:ckan $CKAN_VENV/src &&\
     ln -s $CKAN_VENV/src/ckan/ckan/config/who.ini $CKAN_CONFIG/who.ini
 
 USER ckan
