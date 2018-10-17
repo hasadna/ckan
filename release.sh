@@ -2,8 +2,10 @@
 
 if [ "${1}" == "--update-translations" ]; then
     tx pull -fl he,ar &&\
-    msgfmt -o ckan/i18n/ar/LC_MESSAGES/ckan.mo ckan/i18n/ar/LC_MESSAGES/ckan.po &&\
-    msgfmt -o ckan/i18n/he/LC_MESSAGES/ckan.mo ckan/i18n/ar/LC_MESSAGES/ckan.po
+    for LANG in he ar; do
+        msgfmt -o ckan/i18n/${LANG}/LC_MESSAGES/ckan.mo ckan/i18n/${LANG}/LC_MESSAGES/ckan.po
+    done
+
 
 else
     VERSION_LABEL="${1}"
@@ -25,7 +27,8 @@ else
     fi
 
     echo "${VERSION_LABEL}" > hasadna-VERSION.txt &&\
-    docker build -t uumpa/hasadna-ckan:v${VERSION_LABEL} . &&\
+    docker build --cache-from uumpa/hasadna-ckan:latest \
+                 -t uumpa/hasadna-ckan:v${VERSION_LABEL} . &&\
     docker push uumpa/hasadna-ckan:v${VERSION_LABEL}
     [ "$?" != "0" ] && echo failed docker build push && exit 1
 
