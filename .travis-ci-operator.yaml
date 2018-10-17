@@ -1,1 +1,5 @@
-selfDeployKeyDecryptCmd: 'openssl aes-256-cbc -K $encrypted_3a25b31f1ad6_key -iv $encrypted_3a25b31f1ad6_iv -in .travis_ci_operator_self_github_deploy_key.id_rsa.enc -out .travis_ci_operator_self_github_deploy_key.id_rsa -d'
+encryptedDockerPassword: kKbGT9Oa8cuEVkVpPXPuSw3Gy6zrRR45plNYrmzs3hCB6TTEY9DvQmhbMyv5kkxvVn7Z2/QKWGlnTOs2wCIFizUJg8AMA6CaVmeP4eFl9/w2KUybVSBfctIjgD7MwZU/iRgVzhKMIQDxEx4vh3r8je8mM8aEkG6m+jLhPO46HQU=
+encryptedDockerUser: YW2gcI38ofz9QxlQSMWh/X7xXnq1IvgL+edKQNWHh5lyBRA1eMJpGpQfozwDMwnE1pVHmuVKeP/XDiHSFBznNmqYN4Rnm7R06bN9yaKeg+Q3gvz6IrR+DywUZ69NzPtGEM1KHYTv5qA09rgsKLWP3Yj+PikjJRTEOZygbMYNuEA=
+selfDeployKeyDecryptCmd: openssl aes-256-cbc -K $encrypted_3a25b31f1ad6_key -iv $encrypted_3a25b31f1ad6_iv
+  -in .travis_ci_operator_self_github_deploy_key.id_rsa.enc -out .travis_ci_operator_self_github_deploy_key.id_rsa
+  -d
