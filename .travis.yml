@@ -1,25 +1,17 @@
+language: bash
 sudo: required
-
-language: python
-
+env:
+  global:
+  - TRAVIS_CI_OPERATOR=1
+  - secure: "YW2gcI38ofz9QxlQSMWh/X7xXnq1IvgL+edKQNWHh5lyBRA1eMJpGpQfozwDMwnE1pVHmuVKeP/XDiHSFBznNmqYN4Rnm7R06bN9yaKeg+Q3gvz6IrR+DywUZ69NzPtGEM1KHYTv5qA09rgsKLWP3Yj+PikjJRTEOZygbMYNuEA="
+  - secure: "kKbGT9Oa8cuEVkVpPXPuSw3Gy6zrRR45plNYrmzs3hCB6TTEY9DvQmhbMyv5kkxvVn7Z2/QKWGlnTOs2wCIFizUJg8AMA6CaVmeP4eFl9/w2KUybVSBfctIjgD7MwZU/iRgVzhKMIQDxEx4vh3r8je8mM8aEkG6m+jLhPO46HQU="
 services:
-  - docker
-
-cache:
-  directories:
-     - ~/docker
-
-before_install:
-  - docker build --rm=false -f contrib/docker/postgresql/Dockerfile -t postgresql .
-  - docker build --rm=false -f contrib/docker/solr/Dockerfile -t solr .
-  - docker pull redis:latest
-  - docker build --rm=false -t ckan .
-
+- docker
 install:
-  - docker run -d --name db postgresql
-  - docker run -d --name solr solr
-  - docker run -d --name redis redis:latest
-  - docker run -d --name ckan -p 5000:5000 --link db:db --link redis:redis --link solr:solr ckan
-
+- curl -L https://raw.githubusercontent.com/OriHoch/travis-ci-operator/master/travis_ci_operator.sh > $HOME/bin/travis_ci_operator.sh
+- bash $HOME/bin/travis_ci_operator.sh init
+- travis_ci_operator.sh docker-login
 script:
-  - docker ps -a
+- docker build -t uumpa/hasadna-ckan:latest -t uumpa/hasadna-ckan:${TRAVIS_COMMIT} . &&\
+  docker push uumpa/hasadna-ckan:latest &&\
+  docker push uumpa/hasadna-ckan:${TRAVIS_COMMIT}
