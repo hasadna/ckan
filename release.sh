@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 if [ "${1}" == "--update-translations" ]; then
-    tx pull -fl he,ar &&\
-    for LANG in he ar; do
+    tx pull -fl he,ar,en_US &&\
+    for LANG in he ar en_US; do
         msgfmt -o ckan/i18n/${LANG}/LC_MESSAGES/ckan.mo ckan/i18n/${LANG}/LC_MESSAGES/ckan.po
     done
 
