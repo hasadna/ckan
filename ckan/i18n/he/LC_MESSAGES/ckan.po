@@ -3108,7 +3108,7 @@ msgstr "האם אתם בטוחים שאתם רוצים למחוק את הישו�
 #: ckan/templates/group/confirm_delete_member.html:11
 #: ckan/templates/organization/confirm_delete_member.html:11
 msgid "Are you sure you want to delete member - {name}?"
-msgstr "האם אתם בטוחים שאתם רוצים למחוק את חבר הרשות - {name}?"
+msgstr "האם אתם בטוחים שאתם רוצים למחוק את חבר הישות - {name}?"
 
 #: ckan/templates/group/edit.html:7 ckan/templates/group/edit_base.html:3
 #: ckan/templates/group/edit_base.html:11
@@ -3130,7 +3130,7 @@ msgstr "ערוך ישות"
 #: ckan/templates/organization/edit_base.html:24
 #: ckan/templates/organization/members.html:3
 msgid "Members"
-msgstr "חברי רשות"
+msgstr "חברי ישות"
 
 #: ckan/templates/group/history.html:3 ckan/templates/group/history.html:6
 #: ckan/templates/package/history.html:3 ckan/templates/package/history.html:6
@@ -3153,18 +3153,18 @@ msgstr "אין כרגע ישויות לאתר הזה"
 #: ckan/templates/group/index.html:31
 #: ckan/templates/organization/index.html:31
 msgid "How about creating one?"
-msgstr "מה דעתכם ליצור רשות?"
+msgstr "מה דעתכם ליצור ישות?"
 
 #: ckan/templates/group/member_new.html:8
 #: ckan/templates/organization/member_new.html:10
 msgid "Back to all members"
-msgstr "חזרה לרשימת חברי הרשות"
+msgstr "חזרה לרשימת חברי הישות"
 
 #: ckan/templates/group/member_new.html:10
 #: ckan/templates/organization/member_new.html:7
 #: ckan/templates/organization/member_new.html:12
 msgid "Edit Member"
-msgstr "עריכת חבר ברשות"
+msgstr "עריכת חבר בישות"
 
 #: ckan/templates/group/member_new.html:10
 #: ckan/templates/group/member_new.html:64 ckan/templates/group/members.html:6
@@ -3173,7 +3173,7 @@ msgstr "עריכת חבר ברשות"
 #: ckan/templates/organization/member_new.html:63
 #: ckan/templates/organization/members.html:8
 msgid "Add Member"
-msgstr "הוספת חבר ברשות"
+msgstr "הוספת חבר בישות"
 
 #: ckan/templates/group/member_new.html:18
 #: ckan/templates/organization/member_new.html:19
@@ -3212,7 +3212,7 @@ msgstr "תפקיד"
 #: ckan/templates/organization/member_new.html:57
 #: ckan/templates/organization/members.html:36
 msgid "Are you sure you want to delete this member?"
-msgstr "האם אתם בטוחים שאתם רוצים למחוק את חבר הרשות הזה?"
+msgstr "האם אתם בטוחים שאתם רוצים למחוק את חבר הישות הזה?"
 
 #: ckan/templates/group/member_new.html:58
 #: ckan/templates/group/members.html:31
@@ -3590,7 +3590,7 @@ msgstr "כתובת דוא״ל"
 
 #: ckan/templates/organization/member_new.html:59
 msgid "Update Member"
-msgstr "עדכון חבר רשות"
+msgstr "עדכון חבר ישות"
 
 #: ckan/templates/organization/member_new.html:79
 msgid ""
@@ -4445,7 +4445,7 @@ msgstr "לא נמצאו מסמכים"
 #: ckan/templates/snippets/search_result_text.html:21
 msgid "{number} group found for \"{query}\""
 msgid_plural "{number} groups found for \"{query}\""
-msgstr[0] "רשות אחת נמצאה עבור \"{query}\""
+msgstr[0] "ישות אחת נמצאה עבור \"{query}\""
 msgstr[1] "{number} ישויות נמצאו עבור \"{query}\""
 msgstr[2] "{number} ישויות נמצאו עבור \"{query}\""
 msgstr[3] "{number} ישויות נמצאו עבור \"{query}\""
@@ -4457,7 +4457,7 @@ msgstr "לא נמצאו ישויות עבור \"{query}\""
 #: ckan/templates/snippets/search_result_text.html:23
 msgid "{number} group found"
 msgid_plural "{number} groups found"
-msgstr[0] "נמצאה רשות אחת"
+msgstr[0] "נמצאה ישות אחת"
 msgstr[1] "{number}ישויות נמצאו"
 msgstr[2] "{number}ישויות נמצאו"
 msgstr[3] "{number}ישויות נמצאו"
